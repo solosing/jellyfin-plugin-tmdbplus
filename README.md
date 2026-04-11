@@ -1,7 +1,7 @@
 # jellyfin-plugin-tmdbplus
 
 [![release](https://img.shields.io/github/v/release/cxfksword/jellyfin-plugin-tmdbplus)](https://github.com/cxfksword/jellyfin-plugin-tmdbplus/releases)
-[![platform](https://img.shields.io/badge/jellyfin-10.9.x|10.10.x-lightgrey?logo=jellyfin)](https://github.com/cxfksword/jellyfin-plugin-tmdbplus/releases)
+[![platform](https://img.shields.io/badge/jellyfin-10.11.x-lightgrey?logo=jellyfin)](https://github.com/cxfksword/jellyfin-plugin-tmdbplus/releases)
 [![license](https://img.shields.io/github/license/cxfksword/jellyfin-plugin-tmdbplus)](https://github.com/cxfksword/jellyfin-plugin-tmdbplus/main/LICENSE) 
 
 jellyfin电影元数据插件，使用TheMovieDb（TMDB）获取电影与剧集元数据。
@@ -16,11 +16,11 @@ jellyfin电影元数据插件，使用TheMovieDb（TMDB）获取电影与剧集�
 
 添加插件存储库：
 
-国内加速：https://ghfast.top/https://github.com/cxfksword/jellyfin-plugin-tmdb-plus/releases/download/manifest/manifest_cn.json
+国内加速：https://ghfast.top/https://github.com/cxfksword/jellyfin-plugin-tmdbplus/releases/download/manifest/manifest_cn.json
 
-国外访问：https://github.com/cxfksword/jellyfin-plugin-tmdb-plus/releases/download/manifest/manifest.json
+国外访问：https://github.com/cxfksword/jellyfin-plugin-tmdbplus/releases/download/manifest/manifest.json
 
-> 如果都无法访问，可以直接从 [Release](https://github.com/cxfksword/jellyfin-plugin-tmdb-plus/releases) 页面下载，并解压到 jellyfin 插件目录中使用
+> 如果都无法访问，可以直接从 [Release](https://github.com/cxfksword/jellyfin-plugin-tmdbplus/releases) 页面下载，并解压到 jellyfin 插件目录中使用
 
 ## 如何使用
 

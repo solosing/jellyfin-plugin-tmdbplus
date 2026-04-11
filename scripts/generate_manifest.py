@@ -18,7 +18,7 @@ def generate_manifest():
         "overview": "jellyfin电影元数据插件",
         "owner": "cxfksword",
         "category": "Metadata",
-        "imageUrl": "https://github.com/cxfksword/jellyfin-plugin-tmdb-plus/raw/main/doc/logo.jpeg",
+        "imageUrl": "https://github.com/cxfksword/jellyfin-plugin-tmdbplus/raw/main/doc/logo.jpeg",
         "versions": []
     }]
 
@@ -27,7 +27,7 @@ def generate_version(filepath, version, changelog):
         'version': f"{version}.0",
         'changelog': changelog,
         'targetAbi': '10.11.0.0',
-        'sourceUrl': f'https://github.com/cxfksword/jellyfin-plugin-tmdb-plus/releases/download/v{version}/tmdbplus_{version}.0.zip',
+        'sourceUrl': f'https://github.com/cxfksword/jellyfin-plugin-tmdbplus/releases/download/v{version}/tmdbplus_{version}.0.zip',
         'checksum': md5sum(filepath),
         'timestamp': datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
     }
@@ -47,7 +47,7 @@ def main():
 
     # 解析旧 manifest
     try:
-        with urlopen('https://github.com/cxfksword/jellyfin-plugin-tmdb-plus/releases/download/manifest/manifest.json') as f:
+        with urlopen('https://github.com/cxfksword/jellyfin-plugin-tmdbplus/releases/download/manifest/manifest.json') as f:
             manifest = json.load(f)
     except HTTPError as err:
         if err.code == 404:
