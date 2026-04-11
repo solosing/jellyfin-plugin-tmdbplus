@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2792BCF5-FF66-4CA2-A7F3-00B84563F69E}") = "Jellyfin.Plugin.TMDbPlus", "Jellyfin.Plugin.TMDbPlus\Jellyfin.Plugin.TMDbPlus.csproj", "{D921B930-CF91-406F-ACBC-08914DCD0D34}"
+EndProject
+Project("{2792BCF5-FF66-4CA2-A7F3-00B84563F69E}") = "Jellyfin.Plugin.TMDbPlus.Test", "Jellyfin.Plugin.TMDbPlus.Test\Jellyfin.Plugin.TMDbPlus.Test.csproj", "{80814353-4291-4230-8C4A-4C45CAD4D5D3}"
+EndProject
+Project("{2792BCF5-FF66-4CA2-A7F3-00B84563F69E}") = "AnitomySharp", "AnitomySharp\AnitomySharp.csproj", "{B6FC3E72-D30D-49D3-B545-0EF0CCFF220A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D921B930-CF91-406F-ACBC-08914DCD0D34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D921B930-CF91-406F-ACBC-08914DCD0D34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D921B930-CF91-406F-ACBC-08914DCD0D34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D921B930-CF91-406F-ACBC-08914DCD0D34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80814353-4291-4230-8C4A-4C45CAD4D5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80814353-4291-4230-8C4A-4C45CAD4D5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80814353-4291-4230-8C4A-4C45CAD4D5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80814353-4291-4230-8C4A-4C45CAD4D5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6FC3E72-D30D-49D3-B545-0EF0CCFF220A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FC3E72-D30D-49D3-B545-0EF0CCFF220A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FC3E72-D30D-49D3-B545-0EF0CCFF220A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FC3E72-D30D-49D3-B545-0EF0CCFF220A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D81AE36-16A1-4386-8B86-21FACCB675DF}
+	EndGlobalSection
+EndGlobal
