@@ -8,6 +8,7 @@ jellyfin电影元数据插件，使用TheMovieDb（TMDB）获取电影与剧集�
 
 功能：
 * 支持从TMDB获取元数据
+* 支持设置TMDB域名和代理
 * 兼容anime动画命名格式
 
 ![logo](doc/logo.jpeg)
