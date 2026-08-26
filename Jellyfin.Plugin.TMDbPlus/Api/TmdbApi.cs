@@ -776,9 +776,28 @@ namespace Jellyfin.Plugin.TMDbPlus.Api
             }
         }
 
-        private Task EnsureClientConfigAsync()
+        private async Task EnsureClientConfigAsync()
         {
-            return !_tmDbClient.HasConfig ? _tmDbClient.GetConfigAsync() : Task.CompletedTask;
+            if (_tmDbClient.HasConfig)
+            {
+                return;
+            }
+
+            await _tmDbClient.GetConfigAsync().ConfigureAwait(false);
+
+            // 图床镜像改写：配置 TmdbImageHost 后，图片地址不再使用 TMDB 返回的官方图床
+            // 参考 MoviePilot 的 TMDB_IMAGE_DOMAIN 设计
+            var imageHost = Plugin.Instance?.Configuration?.TmdbImageHost;
+            if (!string.IsNullOrWhiteSpace(imageHost))
+            {
+                var imageBase = $"https://{imageHost.Trim().TrimEnd('/')}/t/p/";
+                var images = _tmDbClient.Config?.Images;
+                if (images != null)
+                {
+                    images.BaseUrl = imageBase;
+                    images.SecureBaseUrl = imageBase;
+                }
+            }
         }
 
         /// <summary>
