@@ -1,0 +1,30 @@
+name: Build Plugin Artifact
+
+on:
+  push:
+    branches:
+      - "**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Publish
+        run: dotnet publish Jellyfin.Plugin.TMDbPlus/Jellyfin.Plugin.TMDbPlus.csproj --configuration Release --output publish
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TMDbPlus-imagehost
+          path: publish/
+          if-no-files-found: error
