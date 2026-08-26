@@ -45,6 +45,11 @@
                             <label class="inputLabel inputLabelUnfocused" for="TmdbHost">Api Host</label>
                             <input id="TmdbHost" name="TmdbHost" type="text" is="emby-input" placeholder="api.tmdb.org" />
                         </div>
+                        <div class="inputContainer">
+                            <label class="inputLabel inputLabelUnfocused" for="TmdbImageHost">Image Host</label>
+                            <input id="TmdbImageHost" name="TmdbImageHost" type="text" is="emby-input" placeholder="留空用官方图床，镜像填 tmdb.solosing.top" />
+                            <div class="fieldDescription">TMDB图片（海报/背景）域名，配置后图片下载与预览全部走该镜像</div>
+                        </div>
                         <div class="selectContainer">
                             <label class="selectLabel" for="TmdbProxyType">Api代理服务器：</label>
                             <select is="emby-select" id="TmdbProxyType" name="TmdbProxyType"
@@ -87,6 +92,7 @@
                         document.querySelector('#EnableTmdbOfficialRating').checked = config.EnableTmdbOfficialRating;
                         document.querySelector('#TmdbApiKey').value = config.TmdbApiKey;
                         document.querySelector('#TmdbHost').value = config.TmdbHost;
+                        document.querySelector('#TmdbImageHost').value = config.TmdbImageHost;
                         document.querySelector('#TmdbProxyType').value = config.TmdbProxyType;
                         document.querySelector('#TmdbProxyHost').value = config.TmdbProxyHost;
                         document.querySelector('#TmdbProxyPort').value = config.TmdbProxyPort;
@@ -103,6 +109,7 @@
                         config.EnableTmdbOfficialRating = document.querySelector('#EnableTmdbOfficialRating').checked;
                         config.TmdbApiKey = document.querySelector('#TmdbApiKey').value;
                         config.TmdbHost = document.querySelector('#TmdbHost').value;
+                        config.TmdbImageHost = document.querySelector('#TmdbImageHost').value;
                         config.TmdbProxyType = document.querySelector('#TmdbProxyType').value;
                         config.TmdbProxyHost = document.querySelector('#TmdbProxyHost').value;
                         config.TmdbProxyPort = document.querySelector('#TmdbProxyPort').value;
