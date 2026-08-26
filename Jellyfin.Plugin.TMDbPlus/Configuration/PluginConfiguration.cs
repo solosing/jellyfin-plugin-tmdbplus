@@ -35,6 +35,11 @@ public class PluginConfiguration : BasePluginConfiguration
     /// </summary>
     public string TmdbHost { get; set; } = string.Empty;
     /// <summary>
+    /// tmdb 图片host（图床镜像域名，如 tmdb.solosing.top）
+    /// 留空则使用 TMDB API 返回的官方图床(image.tmdb.org)
+    /// </summary>
+    public string TmdbImageHost { get; set; } = string.Empty;
+    /// <summary>
     /// 代理服务器类型，0-禁用，1-http，2-https，3-socket5
     /// </summary>
     public string TmdbProxyType { get; set; } = string.Empty;
